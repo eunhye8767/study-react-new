@@ -1,4 +1,5 @@
 import useTabs from "../hooks/useTabs";
+import useTitle from "../hooks/useTitle";
 
 const content = [
   {
@@ -12,6 +13,8 @@ const content = [
 ];
 
 const Tabs = () => {
+  const pageTitle = useTitle("Tabs page")
+
   const { currentItem, changeItem } = useTabs(0, content);
 
   return (
