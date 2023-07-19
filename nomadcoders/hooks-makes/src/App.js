@@ -2,8 +2,11 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 import PageInput from "./pages/PageInput";
 import PageTab from "./pages/PageTab";
+import useClick from "./hooks/useClick";
 
 function App() {
+  const sayHello = () => console.log("say hello");
+  const title = useClick(sayHello)
   return (
     <div className="App">
       <BrowserRouter>
@@ -17,6 +20,8 @@ function App() {
             </li>
           </ul>
         </nav>
+
+        <div ref={title}>Hi</div>
 
         <Routes>
           <Route path="/input" element={<PageInput />}></Route>
