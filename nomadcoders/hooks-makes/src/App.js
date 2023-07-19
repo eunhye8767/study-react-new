@@ -1,12 +1,28 @@
-import './App.css';
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
-import Input from './components/Input';
+import PageInput from "./pages/PageInput";
+import PageTab from "./pages/PageTab";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <Input />
+      <BrowserRouter>
+        <nav>
+          <ul>
+            <li>
+              <NavLink to={"/input"}>input</NavLink>
+            </li>
+            <li>
+              <NavLink to={"tabs"}>tabs</NavLink>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          <Route path="/input" element={<PageInput />}></Route>
+          <Route path="/tabs" element={<PageTab />}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
