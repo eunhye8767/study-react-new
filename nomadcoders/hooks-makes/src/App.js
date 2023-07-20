@@ -5,6 +5,8 @@ import PageTab from "./pages/PageTab";
 import PageConfirm from "./pages/PageConfirm";
 import PagePreventLeave from "./pages/PagePreventLeave";
 import PageBeforeLeave from "./pages/PageBeforeLeave";
+import PageFadeIn from "./pages/PageFadeIn";
+import PageNetwork from "./pages/PageNetwork";
 import useClick from "./hooks/useClick";
 
 function App() {
@@ -30,6 +32,12 @@ function App() {
             <li>
               <NavLink to={"beforeLeave"}>beforeLeave</NavLink>
             </li>
+            <li>
+              <NavLink to={"fadeIn"}>fadeIn</NavLink>
+            </li>
+            <li>
+              <NavLink to={"network"}>network</NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -45,6 +53,8 @@ function App() {
           <Route path="/confirm" element={<PageConfirm />}></Route>
           <Route path="/preventLeave" element={<PagePreventLeave />}></Route>
           <Route path="/beforeLeave" element={<PageBeforeLeave />}></Route>
+          <Route path="/fadeIn" element={<PageFadeIn />}></Route>
+          <Route path="/network" element={<PageNetwork />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
