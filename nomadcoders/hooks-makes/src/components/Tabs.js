@@ -22,7 +22,7 @@ const Tabs = () => {
       <div className="tab">
         <div className="tab-menu">
           {content.map((section, index) => (
-            <button onClick={() => changeItem(index)}>{section.tab}</button>
+            <button onClick={() => changeItem(index)} key={section.tab}>{section.tab}</button>
           ))}
         </div>
         <div className="tab-panel">{currentItem.content}</div>

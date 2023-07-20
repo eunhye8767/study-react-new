@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { useInput } from "../hooks/useInput";
-import useTitle from "../hooks/useTitle";
+
 
 const Input = () => {
-  const pageTitle = useTitle("Input page")
-
   const maxLen = (value) => value.length < 10;
   // @포함되어 있지 않아야 한다.
   // const checkIncludes = (value) => !value.includes("@");
