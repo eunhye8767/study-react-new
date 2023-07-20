@@ -4,6 +4,7 @@ import PageInput from "./pages/PageInput";
 import PageTab from "./pages/PageTab";
 import PageConfirm from "./pages/PageConfirm";
 import PagePreventLeave from "./pages/PagePreventLeave";
+import PageBeforeLeave from "./pages/PageBeforeLeave";
 import useClick from "./hooks/useClick";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
             <li>
               <NavLink to={"preventLeave"}>preventLeave</NavLink>
             </li>
+            <li>
+              <NavLink to={"beforeLeave"}>beforeLeave</NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -34,12 +38,13 @@ function App() {
         <div ref={title}>Title Ref</div>
 
         <hr />
-        
+
         <Routes>
           <Route path="/input" element={<PageInput />}></Route>
           <Route path="/tabs" element={<PageTab />}></Route>
           <Route path="/confirm" element={<PageConfirm />}></Route>
           <Route path="/preventLeave" element={<PagePreventLeave />}></Route>
+          <Route path="/beforeLeave" element={<PageBeforeLeave />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
