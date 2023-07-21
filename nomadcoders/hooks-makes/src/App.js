@@ -10,6 +10,7 @@ import PageNetwork from "./pages/PageNetwork";
 import PageScroll from "./pages/PageScroll";
 import PageFullScreen from "./pages/PageFullScreen";
 import PageNotification from "./pages/PageNotification";
+import PageAxios from "./pages/PageAxios";
 import useClick from "./hooks/useClick";
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
             <li>
               <NavLink to={"notification"}>notification</NavLink>
             </li>
+            <li>
+              <NavLink to={"axios"}>axios</NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -70,6 +74,7 @@ function App() {
           <Route path="/scroll" element={<PageScroll />}></Route>
           <Route path="/fullScreen" element={<PageFullScreen />}></Route>
           <Route path="/notification" element={<PageNotification />}></Route>
+          <Route path="/axios" element={<PageAxios />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
