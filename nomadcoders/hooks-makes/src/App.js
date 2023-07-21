@@ -7,6 +7,8 @@ import PagePreventLeave from "./pages/PagePreventLeave";
 import PageBeforeLeave from "./pages/PageBeforeLeave";
 import PageFadeIn from "./pages/PageFadeIn";
 import PageNetwork from "./pages/PageNetwork";
+import PageScroll from "./pages/PageScroll";
+import PageFullScreen from "./pages/PageFullScreen";
 import useClick from "./hooks/useClick";
 
 function App() {
@@ -38,6 +40,12 @@ function App() {
             <li>
               <NavLink to={"network"}>network</NavLink>
             </li>
+            <li>
+              <NavLink to={"scroll"}>scroll</NavLink>
+            </li>
+            <li>
+              <NavLink to={"fullScreen"}>fullScreen</NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -55,6 +63,8 @@ function App() {
           <Route path="/beforeLeave" element={<PageBeforeLeave />}></Route>
           <Route path="/fadeIn" element={<PageFadeIn />}></Route>
           <Route path="/network" element={<PageNetwork />}></Route>
+          <Route path="/scroll" element={<PageScroll />}></Route>
+          <Route path="/fullScreen" element={<PageFullScreen />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
