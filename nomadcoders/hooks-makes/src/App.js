@@ -9,6 +9,7 @@ import PageFadeIn from "./pages/PageFadeIn";
 import PageNetwork from "./pages/PageNetwork";
 import PageScroll from "./pages/PageScroll";
 import PageFullScreen from "./pages/PageFullScreen";
+import PageNotification from "./pages/PageNotification";
 import useClick from "./hooks/useClick";
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
             <li>
               <NavLink to={"fullScreen"}>fullScreen</NavLink>
             </li>
+            <li>
+              <NavLink to={"notification"}>notification</NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -65,6 +69,7 @@ function App() {
           <Route path="/network" element={<PageNetwork />}></Route>
           <Route path="/scroll" element={<PageScroll />}></Route>
           <Route path="/fullScreen" element={<PageFullScreen />}></Route>
+          <Route path="/notification" element={<PageNotification />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
