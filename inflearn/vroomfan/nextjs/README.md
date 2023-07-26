@@ -86,3 +86,16 @@ sudo n <version> // 특정 버전
 <br />
 
 <hr />
+
+#### 1. Data fetching 이해하기(feat. next/link)
+1. Next.js
+  - SSR, CSR, SSG의 장점만 고려하여 페이지를 자유롭게 routing/rendering 할 수 있도록 API를 제공함.
+    - SSR/SSG의 용량과 보안
+    - CSR의 페이지 이동 속도, 깜박임 없음
+    - NextJS의 방향성
+  - pre-rendering : CRA로 만든 웹사이트와 다르게 개발자 모드에서 JS Disable 적용을 해도 제대로 불러와진다.<br />만들어진 HTML을 불러오기 때문에 영향이 없다.<br />제일 큰 차이점으로 이해하면 된다!
+<br />
+<br />
+
+#### 2. Header UI 만들기
+
